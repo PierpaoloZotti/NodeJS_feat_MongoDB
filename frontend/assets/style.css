@@ -1,0 +1,95 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+a {
+   color: #ddd;
+   text-decoration: none;
+}
+
+ul {
+   width: 10%;
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+}
+body {
+   background-color: #3f4d5e;
+}
+
+label {
+   color: #ddd;
+}
+
+.navbar {
+   width: 100%;
+   height: 70px;
+   position: sticky;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+   background-color: #3f4d5e;
+}
+.container {
+   width: 300px;
+   height: 300px;
+   border: 1px solid #ddd;
+   box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
+   border-radius: 16px;
+   margin: 50px auto;
+}
+
+.container form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   width: 100%;
+   gap: 15px;
+}
+
+.container form div {
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+
+input {
+   padding: 8px 10px;
+   border: 1px solid #ddddddf6;
+   border-radius: 8px;
+}
+
+select {
+   padding: 8px 10px;
+   border: 1px solid #ddddddf6;
+   border-radius: 8px;
+}
+input:focus,
+select:focus {
+   outline-offset: 4px;
+   outline-color: aquamarine;
+   transition: 0.2s;
+}
+
+#btn {
+   background-color: #090a6d;
+   border: 2px solid #090a6d;
+   padding: 8px 10px;
+   border-radius: 8px;
+   color: #ddd;
+   font-weight: 700;
+   outline: 2px solid #090a6d;
+}
+
+#btn:is(:hover, :focus) {
+   outline-offset: 3px;
+   transition: 0.2s;
+}

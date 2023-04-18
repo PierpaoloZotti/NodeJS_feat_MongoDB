@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Cadastro</title>
+      <link rel="stylesheet" href="./assets/style.css" />
+   </head>
+   <body>
+      <nav class="navbar">
+         <img src="./assets/logo.svg" alt="logo" width="70" height="35" />
+         <ul>
+            <li><a href="">Login</a></li>
+            <li><a href="">Consulta</a></li>
+         </ul>
+      </nav>
+      <div class="container">
+         <form>
+            <div>
+               <label for="fullName">Full name</label>
+               <input type="text" name="fullName" id="fullName" placeholder="Full name" />
+            </div>
+            <div>
+               <label for="salary">Salary</label>
+               <input type="number" name="salary" id="salary" placeholder="Salary" />
+            </div>
+            <div>
+               <label for="status">Status</label>
+               <select name="status" id="status">
+                  <option value="false" selected="selected">False</option>
+                  <option value="true">True</option>
+               </select>
+            </div>
+            <button id="btn">CADASTRAR</button>
+         </form>
+      </div>
+      <script src="./js/main.js"></script>
+   </body>
+</html>
